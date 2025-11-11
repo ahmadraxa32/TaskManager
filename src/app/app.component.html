@@ -1,0 +1,42 @@
+<div class="body">
+<div class="Todo_main">
+  <h1>Todo App</h1>
+
+  <div class="container">
+    <input [(ngModel)]="task" type="text" placeholder="Enter task!!!" />
+    <input type="date" [(ngModel)]="TaskDate" placeholder="Enter Task date" />
+    <button class="addbtn" (click)="addTask()">Add Task</button>
+    <button class="addbtn" (click)="showPendingTask()">
+      {{ showPending ? 'Hide Pending Tasks' : 'Show Pending Tasks' }}
+    </button>
+  </div>
+</div>
+
+<div class="task_area">
+  @for (t of taskList; track t.id) {
+    <ul class="task_list">
+      <li>{{ t.id }}</li>
+      <li [class.done]="t.done">{{ t.task }}</li>
+      <li [class.done]="t.done">{{ t.TaskDate }}</li>
+      <li><button (click)="deleteTask(t.id)">Delete</button></li>
+      <li><button (click)="editTask(t)">Edit</button></li>
+      <li>
+        <button (click)="task_done(t)">
+          {{ t.done ? 'Undo ❌' : 'Done ✅' }}
+        </button>
+      </li>
+    </ul>
+  }
+</div>
+
+<div *ngIf="showPending" class="pending_list">
+  <h2>Pending Tasks</h2>
+  @for (p of pending_list; track p.id) {
+    <ul>
+      <li>{{ p.id }}</li>
+      <li>{{ p.task }}</li>
+      <li>{{ p.TaskDate }}</li>
+    </ul>
+  }
+</div>
+</div>

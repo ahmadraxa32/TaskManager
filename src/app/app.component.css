@@ -1,0 +1,72 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Todo_main {
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 12px 6px rgb(99 21 21 / 10%);
+  height: 250px;
+  border-radius: 20px;
+}
+.container {
+  display: flex;
+  gap: 23px;
+  flex-direction: column;
+  width: 310px;
+}
+input {
+  height: 23px;
+}
+.task_area {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 12px 47px rgb(99 21 21 / 10%);
+  width: 100%;
+  margin: 12px;
+  justify-content: center;
+  border-radius: 12px;
+}
+.addbtn {
+  height: 30px;
+  color: white;
+  background-color: blue;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 35px;
+}
+ul li {
+  list-style: none;
+  width: 100px;
+  font-size: 20px;
+}
+.done {
+  text-decoration: line-through;
+  color: gray;
+  background-color: #e6ffe6;
+}
+li button {
+  background-color: blue;
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 33px;
+  width: 120px;
+}
+.pending_list{
+  width: 100%;
+  border: 2px double red ;
+  border-radius: 12px;
+    box-shadow: 0 12px 47px rgb(99 21 21 / 10%);
+    padding: 10px;
+}
