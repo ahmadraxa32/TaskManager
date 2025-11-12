@@ -19,6 +19,9 @@
 }
 input {
   height: 23px;
+  min-width: 120px;
+  width: 100%;
+
 }
 .task_area {
   display: flex;
@@ -68,4 +71,12 @@ li button {
   border: 2px double red ;
   border-radius: 12px;
     box-shadow: 0 12px 47px rgb(99 21 21 / 10%);
+  }
+  @media (max-width:320px) {
+    ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 15px;
 }
+  }
