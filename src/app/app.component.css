@@ -77,6 +77,14 @@ li button {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 15px;
+  gap: 10px;
+}
+  }
+  @media (min-width:375px) {
+    ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
 }
   }
