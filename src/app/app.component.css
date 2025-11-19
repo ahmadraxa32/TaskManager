@@ -80,7 +80,7 @@ li button {
   gap: 10px;
 }
   }
-  @media (min-width:375px) {
+  @media (max-width:376px) {
     ul {
   display: flex;
   flex-wrap: wrap;
